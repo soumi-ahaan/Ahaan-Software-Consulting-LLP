@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ArrowRight, Play } from "@phosphor-icons/react";
+import { Play } from "@phosphor-icons/react";
 import webapp from "../../../../assets/wep-app.png";
 import TechOrbit from "./TechOrbit";
 
@@ -81,7 +81,7 @@ const SERVICES_DATA = [
   },
 ];
 
-export default function HomeBanner() {
+export function HomeBanner() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 

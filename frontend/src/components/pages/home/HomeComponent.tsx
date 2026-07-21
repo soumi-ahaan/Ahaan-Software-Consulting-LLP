@@ -15,6 +15,7 @@ export const HomeComponent = () => {
     <div>
       <HomeBanner/>
       <ServicesSection/>
+      <AboutCompany/>
       <OurTechnology/>
       <WhyChooseUs/>
       <BusinessCard/>

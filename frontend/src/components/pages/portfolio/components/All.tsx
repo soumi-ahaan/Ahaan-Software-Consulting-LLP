@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 
 const WebDevelopment = lazy(() => import("./WebDevelopment"));
- const UiUxDesign = lazy(() => import("./UiUxDesign"));
+//  const UiUxDesign = lazy(() => import("./UiUxDesign"));
 // const SocialMediaMarketing = lazy(() => import("./SocialMediaMarketing"));
 // const AppDevelopment = lazy(() => import("./AppDevelopment.tsx"));
 
@@ -18,15 +18,15 @@ export default function All() {
         </div>
       </Suspense>
 
-      <hr className="my-10 border-slate-200" />
+      {/* <hr className="my-10 border-slate-200" /> */}
 
-      <Suspense fallback={<SectionSkeleton />}>
+      {/* <Suspense fallback={<SectionSkeleton />}>
         <div className="mb-10">
           <UiUxDesign />
         </div>
-      </Suspense>
+      </Suspense> */}
 
-      <hr className="my-10 border-slate-200" />
+      {/* <hr className="my-10 border-slate-200" /> */}
 
       {/* <Suspense fallback={<SectionSkeleton />}>
         <div className="mb-10">
@@ -34,7 +34,7 @@ export default function All() {
         </div>
       </Suspense> */}
 
-      <hr className="my-10 border-slate-200" />
+      {/* <hr className="my-10 border-slate-200" /> */}
 
       {/* <Suspense fallback={<SectionSkeleton />}>
         <AppDevelopment />

@@ -1,26 +1,24 @@
 import React from "react";
 
 export const AboutBanner: React.FC = () => {
-  const bannerStyle: React.CSSProperties = {
-    backgroundImage: `url(https://ahaanmedia.com/ahaanwebsite/Banner/About-Us.webp)`,
-  };
+ 
 
   return (
     <div className="w-full overflow-hidden bg-white">
       <section
-        className="relative flex min-h-[440px] md:min-h-[480px] lg:min-h-[600px] w-full items-center -mt-[80px] md:-mt-[100px] lg:-mt-[120px] bg-cover bg-center bg-no-repeat px-5"
-        style={bannerStyle}
+        className="section-banner"
+        style={{ backgroundImage: `url(https://ahaanmedia.com/ahaanwebsite/Banner/About-Us.webp)`}}
       >
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/20 z-1" />
 
         {/* Banner Content Container */}
-        <div className="relative z-10 mx-auto w-full max-w-[1600px] flex justify-start">
-          <div className="max-w-[900px] translate-y-11 md:translate-y-9 lg:translate-y-0">
-            <h1 className="mb-5 text-left text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
+        <div className="relative z-10 mx-auto w-full px-4 lg:px-6 max-w-[1600px] flex justify-start">
+          <div className="max-w-[900px] ">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
               About Us
             </h1>
-            <p className="max-w-[700px] text-left text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-gray-100">
+            <p className="max-w-[700px]  text-sm  md:text-base lg:text-lg leading-relaxed text-gray-100">
               Empowering businesses through innovation, creativity, and
               technology-driven transformation that accelerates growth, enhances
               efficiency, and builds long-term digital success.
@@ -38,7 +36,7 @@ export const AboutBanner: React.FC = () => {
             <img
               src="https://ahaanmedia.com/ahaanwebsite/All/ASC-Team.png"
               alt="Team Discussion"
-              className="h-auto w-full max-w-[570px] rounded-lg object-cover"
+              className="h-auto w-full rounded-md object-cover"
             />
           </div>
 

@@ -46,7 +46,7 @@ export const AllRoutes = () => {
       <Route path="/case-study" element={<CaseStudyComponent />} />
       <Route path="/contact-us" element={<ContactComponent />} />
       <Route path="/:slug" element={<PolicyDetails />} />
-      <Route path="/case-studies/:slug" element={<CaseStudyDetails />} />
+       <Route path="/case-studies/:slug" element={<CaseStudyDetails />} />
       </Route>
     </Routes>
   );

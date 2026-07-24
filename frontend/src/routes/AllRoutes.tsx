@@ -21,6 +21,7 @@ import { SocialNetworking } from "../components/pages/solution/components/Social
 import { TravelHospitality } from "../components/pages/solution/components/TravelHospitality";
 import { PolicyDetails } from "../components/pages/quicklinks/PolicyDetails";
 import { CaseStudyDetails } from "../components/pages/casestudy/components/CaseStudyDetails";
+import { CareerDetails } from "../components/pages/career/components/CareerDetails";
 
 export const AllRoutes = () => {
   return (
@@ -46,7 +47,8 @@ export const AllRoutes = () => {
       <Route path="/case-study" element={<CaseStudyComponent />} />
       <Route path="/contact-us" element={<ContactComponent />} />
       <Route path="/:slug" element={<PolicyDetails />} />
-       <Route path="/case-studies/:slug" element={<CaseStudyDetails />} />
+      <Route path="/case-studies/:slug" element={<CaseStudyDetails />} />
+      <Route path="/careers/:jobId" element={<CareerDetails/>} />
       </Route>
     </Routes>
   );
